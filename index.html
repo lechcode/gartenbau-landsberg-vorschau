@@ -23,8 +23,11 @@
   <meta property="og:description" content="Gärten gestalten und pflegen in Landsberg am Lech: Neuanlage, Pflege, Hecken- & Formschnitt, Obstbaum & Outdoor-Bonsai. Persönlich, mit Gespür für die Natur." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="de_DE" />
-  <meta property="og:url" content="https://www.gartenbau-landsberg.de/" />
-  <meta property="og:image" content="https://www.gartenbau-landsberg.de/assets/og.jpg" />
+  <!-- DEMO: OG zeigt auf die Vorschau-URL, damit WhatsApp-/Social-Previews laden. Bei Go-Live auf https://www.gartenbau-landsberg.de/ umstellen. -->
+  <meta property="og:url" content="https://lechcode.github.io/gartenbau-landsberg-vorschau/" />
+  <meta property="og:image" content="https://lechcode.github.io/gartenbau-landsberg-vorschau/assets/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta name="theme-color" content="#2F5848" />
   <!-- Favicon: grünes Blatt (Markenfarbe), Inline-SVG, kein externer Request -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%232F5848'/%3E%3Cpath d='M32 50 C 32 34, 38 24, 50 18 C 50 34, 44 46, 32 50 Z' fill='%236FA83C'/%3E%3Cpath d='M32 50 C 32 38, 26 30, 16 26 C 16 38, 22 47, 32 50 Z' fill='%238CC95F'/%3E%3Cpath d='M32 51 V36' stroke='%23EAD9C2' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
@@ -191,7 +194,8 @@
   /* ===== Über mich ===== */
   .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,60px);align-items:center;}
   .about-portrait{position:relative;}
-  .about-portrait img{width:100%;border-radius:var(--radius-lg);box-shadow:var(--shadow-l);aspect-ratio:577/701;object-fit:cover;}
+  .about-portrait picture{display:block;}
+  .about-portrait img{display:block;width:100%;height:auto;border-radius:var(--radius-lg);box-shadow:var(--shadow-l);}
   .about-portrait .leaf-deco{position:absolute;right:-14px;bottom:-14px;width:84px;color:var(--apple);opacity:.9;background:var(--cream);border-radius:50%;padding:10px;box-shadow:var(--shadow-l);}
   .about-body .lead{font-size:var(--step-1);color:var(--ink-soft);}
   .quote{font-family:var(--serif);font-style:italic;font-size:var(--step-3);line-height:1.32;color:var(--forest);margin:var(--space-4) 0;padding-left:22px;border-left:3px solid var(--apple);text-wrap:balance;}
@@ -309,7 +313,7 @@
     .svc-grid,.steps,.trust-grid{grid-template-columns:1fr;}
     .gallery{grid-template-columns:1fr 1fr;gap:9px;} .gallery .wide{grid-column:span 2;}
     .two{grid-template-columns:1fr;}
-    .about-portrait{max-width:190px;}
+    .about-portrait{max-width:210px;}
     .about-portrait .leaf-deco{width:54px;right:-6px;bottom:-6px;padding:8px;}
     .hero-cta{flex-direction:column;align-items:stretch;} .hero-cta .btn{justify-content:center;} .hero-tel{justify-content:center;margin-top:4px;}
     .foot-top{grid-template-columns:1fr;} .foot-bottom{flex-direction:column;align-items:flex-start;}
