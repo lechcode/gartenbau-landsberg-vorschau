@@ -175,6 +175,11 @@
   .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:var(--space-4);align-items:center;}
   .hero-tel{display:inline-flex;align-items:center;gap:9px;font-weight:600;color:#fdfcf6;font-size:var(--step-0);}
   .hero-tel svg{flex:none;}
+  /* Header-Lesbarkeit auf dunklem Hero (hell statt clay/ink) */
+  .hero .eyebrow{color:#d6e7bd;}
+  .hero .eyebrow::before{background:var(--apple);box-shadow:0 0 10px 1px rgba(140,201,95,.5);}
+  .hero .btn-ghost{color:#fdfcf6;border-color:rgba(244,239,230,.5);}
+  .hero .btn-ghost:hover{background:rgba(244,239,230,.12);border-color:rgba(244,239,230,.8);}
 
   /* ===== Vertrauensleiste ===== */
   .trust-bar{background:var(--forest-deep);color:var(--bone);border-top:1px solid rgba(244,239,230,.08);}
@@ -204,8 +209,8 @@
 
   /* ===== Projekte / Galerie ===== */
   .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
-  .gallery figure{position:relative;overflow:hidden;border-radius:var(--radius-sm);box-shadow:var(--shadow-l);background:var(--sage-soft);}
-  .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .5s var(--ease);}
+  .gallery figure{position:relative;overflow:hidden;border-radius:var(--radius-sm);box-shadow:var(--shadow-l);background:var(--sage-soft);aspect-ratio:4/3;}
+  .gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s var(--ease);}
   .gallery figure:hover img{transform:scale(1.05);}
   .gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:22px 14px 10px;font-size:13px;color:#fff;
     background:linear-gradient(180deg,transparent,rgba(20,40,32,.78));opacity:0;transform:translateY(6px);transition:opacity .3s var(--ease),transform .3s var(--ease);}
@@ -354,7 +359,7 @@
     <section class="hero">
       <picture>
         <source type="image/webp" srcset="assets/hero-garten-800.webp 800w, assets/hero-garten-1200.webp 1200w" sizes="100vw">
-        <img class="hero-img" src="assets/hero-garten-1200.jpg" srcset="assets/hero-garten-800.jpg 800w, assets/hero-garten-1200.jpg 1200w" sizes="100vw" width="1200" height="900" alt="Von Karsten Scheffler gestaltetes Hangbeet mit Trittsteinen und Stauden in Landsberg am Lech" fetchpriority="high">
+        <img class="hero-img" src="assets/hero-garten-1200.jpg" srcset="assets/hero-garten-800.jpg 800w, assets/hero-garten-1200.jpg 1200w" sizes="100vw" width="1200" height="900" alt="Von Karsten Scheffler gestaltetes Gartenbeet mit Koniferen und Natursteinmauer in Landsberg am Lech" fetchpriority="high">
       </picture>
       <div class="wrap">
         <div class="hero-inner">
