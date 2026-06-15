@@ -1,0 +1,3 @@
+# DEMO/Vorschau — nicht indexieren (gilt bis Beauftragung & Freigabe)
+User-agent: *
+Disallow: /

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!-- vorschau.html — Lechcode-Enthüllungsseite für Karsten Scheffler (ANFRAGE/Startangebot). Du-Form, persönlich, kein Druck. noindex. -->
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>document.documentElement.classList.add('js');</script>
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Für Karsten — deine neue Website von Lechcode</title>
+  <meta name="description" content="Eine unverbindliche Design-Vorschau für Gartengestaltung Scheffler — und die ehrliche Antwort auf deine Frage: Warum stehe ich nicht ganz oben bei Google?" />
+  <meta property="og:title" content="Für Karsten — deine neue Website ist fertig" />
+  <meta property="og:description" content="Schau dir die Vorschau an: schneller, gefunden, ohne Abo. Ein Geschenk von Lechcode aus Landsberg." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:image" content="https://lechcode.github.io/gartenbau-landsberg-vorschau/assets/og.jpg" />
+  <meta name="theme-color" content="#2F5848" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%232F5848'/%3E%3Cpath d='M32 50 C 32 34, 38 24, 50 18 C 50 34, 44 46, 32 50 Z' fill='%236FA83C'/%3E%3Cpath d='M32 50 C 32 38, 26 30, 16 26 C 16 38, 22 47, 32 50 Z' fill='%238CC95F'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/fonts.css">
+  <style>
+  :root{
+    --forest:#2F5848; --forest-deep:#24463A; --forest-2:#3a6a57;
+    --cream:#F4EFE6; --sand:#EAD9C2; --warm-white:#FBF7EF; --sage-soft:#DCE6D8;
+    --clay:#9C5230; --clay-deep:#834525; --apple:#6FA83C;
+    --ink:#23201B; --ink-soft:#5C5448; --ink-faint:#8a8175;
+    --bone:#F4EFE6; --bone-dim:#cdd6c8; --bone-faint:#9fb0a2;
+    --line-l:rgba(35,32,27,.12); --line-d:rgba(244,239,230,.16);
+    --serif:"Fraunces","Fraunces Fallback",Georgia,serif;
+    --sans:"Inter","Inter Fallback",-apple-system,Arial,sans-serif;
+    --radius:18px; --radius-lg:24px; --radius-sm:11px; --radius-pill:999px;
+    --s4:clamp(30px,3.4vw + 18px,46px); --s5:clamp(33px,5vw + 16px,60px);
+    --s3:clamp(24px,2vw + 18px,32px); --s2:clamp(20px,1vw + 17px,24px); --s1:clamp(17px,.5vw + 15.5px,19px);
+    --ease:cubic-bezier(.22,.61,.36,1);
+    --focus:0 0 0 3px rgba(156,82,48,.45); --focus-d:0 0 0 3px rgba(140,201,95,.5);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+  body{background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.14;letter-spacing:-.015em;text-wrap:balance;}
+  a{color:inherit;} img,svg{display:block;max-width:100%;}
+  .wrap{width:min(1000px,92vw);margin-inline:auto;}
+  .narrow{width:min(760px,92vw);margin-inline:auto;}
+  section{padding:clamp(48px,7vw,90px) 0;position:relative;}
+  .eyebrow{font-weight:600;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--clay);display:inline-flex;align-items:center;gap:9px;margin-bottom:16px;}
+  .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--apple);}
+  .dark .eyebrow{color:#e8c9a3;}
+  .btn{display:inline-flex;align-items:center;gap:9px;cursor:pointer;border:none;background:linear-gradient(180deg,var(--clay),var(--clay-deep));color:#fff;font-weight:650;font-size:16px;padding:15px 26px;border-radius:var(--radius-pill);box-shadow:0 16px 28px -14px rgba(140,69,37,.6);transition:transform .25s var(--ease);text-decoration:none;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn .arr{transition:transform .25s var(--ease);} .btn:hover .arr{transform:translateX(4px);}
+  .btn-big{font-size:18px;padding:18px 34px;}
+
+  /* Hero */
+  .hero{background:radial-gradient(120% 110% at 50% -10%,var(--forest-2),var(--forest-deep) 70%);color:var(--bone);text-align:center;padding:clamp(56px,9vw,104px) 0 clamp(48px,7vw,84px);}
+  .hero h1{font-size:var(--s5);color:#fdfcf6;max-width:20ch;margin:0 auto;}
+  .hero p{font-size:var(--s1);color:var(--bone-dim);max-width:56ch;margin:22px auto 0;line-height:1.7;}
+  .hero .cta{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+  .hero .ghost{background:transparent;border:1.5px solid rgba(244,239,230,.3);color:var(--bone);box-shadow:none;}
+  .gift{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:#cfe0b4;background:rgba(111,168,60,.16);border:1px solid rgba(111,168,60,.35);padding:7px 15px;border-radius:var(--radius-pill);margin-bottom:24px;}
+
+  .sec-head{text-align:center;max-width:60ch;margin:0 auto clamp(28px,4vw,44px);}
+  .sec-head h2{font-size:var(--s4);}
+  .sec-head p{font-size:var(--s1);color:var(--ink-soft);margin-top:14px;line-height:1.7;}
+  .dark{background:var(--forest-deep);color:var(--bone);}
+  .dark h2{color:#fdfcf6;} .dark .sec-head p{color:var(--bone-dim);}
+  .sand{background:var(--sand);}
+
+  /* Before/After Slider */
+  .ba{position:relative;width:100%;max-width:920px;margin:0 auto;aspect-ratio:1280/1500;border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 30px 70px -30px rgba(0,0,0,.5);touch-action:pan-y;user-select:none;background:var(--sage-soft);}
+  .ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;pointer-events:none;}
+  .ba-top{will-change:clip-path;clip-path:inset(0 50% 0 0);}
+  .ba-lbl{position:absolute;top:14px;z-index:4;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:var(--radius-pill);color:#fff;}
+  .ba-lbl.alt{left:14px;background:rgba(36,32,27,.8);}
+  .ba-lbl.neu{right:14px;background:var(--clay);}
+  .ba-div{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;transform:translateX(-1.5px);z-index:3;box-shadow:0 0 0 1px rgba(0,0,0,.1);}
+  .ba-knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:52px;height:52px;border-radius:50%;background:#fff;border:none;cursor:ew-resize;z-index:4;display:grid;place-items:center;box-shadow:0 6px 18px -4px rgba(0,0,0,.5);}
+  .ba-knob:focus-visible{outline:none;box-shadow:0 0 0 4px rgba(156,82,48,.5);}
+  .ba-hint{text-align:center;font-size:14px;color:var(--ink-faint);margin-top:16px;}
+
+  /* Tacho */
+  .tacho{text-align:center;}
+  .tacho .big{font-family:var(--serif);font-weight:600;font-size:clamp(44px,9vw,86px);color:#fdfcf6;line-height:1;letter-spacing:-.02em;}
+  .tacho .big .old{color:var(--bone-faint);text-decoration:line-through;text-decoration-thickness:3px;}
+  .tacho .big .new{color:#cfe0b4;}
+  .tacho .big .arrow{color:#e8c9a3;margin:0 .15em;}
+  .tacho p{color:var(--bone-dim);font-size:var(--s1);max-width:54ch;margin:22px auto 0;line-height:1.7;}
+  .mini-stats{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px;}
+  .mini{background:rgba(244,239,230,.07);border:1px solid var(--line-d);border-radius:var(--radius);padding:18px 22px;min-width:150px;}
+  .mini .n{font-family:var(--serif);font-size:28px;color:#fdfcf6;font-weight:600;}
+  .mini .l{font-size:13px;color:var(--bone-faint);margin-top:4px;}
+
+  /* Phones */
+  .phones{display:flex;gap:clamp(16px,4vw,46px);justify-content:center;align-items:flex-end;flex-wrap:wrap;}
+  .phone{width:min(220px,42vw);}
+  .phone .frame{position:relative;border-radius:30px;background:#1a1a1c;padding:9px;box-shadow:0 24px 50px -20px rgba(0,0,0,.5);}
+  .phone .frame::before{content:"";position:absolute;top:15px;left:50%;transform:translateX(-50%);width:34%;height:18px;background:#1a1a1c;border-radius:0 0 12px 12px;z-index:3;}
+  .phone .screen{position:relative;border-radius:23px;overflow:hidden;aspect-ratio:500/1015;background:#fff;}
+  .phone .screen img{width:100%;height:100%;object-fit:cover;object-position:top;}
+  .phone .cap{text-align:center;margin-top:14px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:6px 12px;border-radius:var(--radius-pill);display:inline-block;}
+  .phone.alt .cap{background:rgba(36,32,27,.1);color:var(--ink-soft);}
+  .phone.neu .cap{background:var(--clay);color:#fff;}
+  .phone .capwrap{text-align:center;}
+
+  /* Cards */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px;}
+  .card{background:var(--warm-white);border:1px solid var(--line-l);border-radius:var(--radius);padding:26px 24px;box-shadow:0 2px 6px -3px rgba(47,88,72,.16);}
+  .dark .card{background:rgba(244,239,230,.05);border-color:var(--line-d);}
+  .card .ic{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:12px;background:var(--sage-soft);color:var(--forest);font-size:22px;margin-bottom:14px;}
+  .dark .card .ic{background:rgba(111,168,60,.18);color:#cfe0b4;}
+  .card h3{font-size:var(--s2);margin-bottom:8px;} .dark .card h3{color:#fdfcf6;}
+  .card p{font-size:15px;color:var(--ink-soft);} .dark .card p{color:var(--bone-dim);}
+  .card .free{display:inline-block;margin-top:12px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--apple);}
+
+  .honest{background:var(--warm-white);border:1px solid var(--line-l);border-left:4px solid var(--clay);border-radius:var(--radius);padding:24px 26px;margin-top:26px;}
+  .honest b{color:var(--clay-deep);}
+  .checklist{list-style:none;max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px;}
+  .checklist li{display:flex;gap:14px;align-items:flex-start;background:var(--warm-white);border:1px solid var(--line-l);border-radius:var(--radius);padding:16px 20px;}
+  .checklist .ic{flex:none;width:30px;height:30px;border-radius:8px;background:var(--sage-soft);color:var(--forest);display:grid;place-items:center;font-size:16px;font-weight:700;}
+  .checklist h3{font-size:16.5px;margin-bottom:3px;} .checklist p{font-size:14.5px;color:var(--ink-soft);}
+
+  /* Korrigiert-Liste */
+  .fixed{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:860px;margin:0 auto;}
+  .fixed .row{display:flex;gap:13px;align-items:flex-start;background:var(--warm-white);border:1px solid var(--line-l);border-radius:var(--radius);padding:18px 20px;}
+  .fixed .check{flex:none;width:26px;height:26px;border-radius:50%;background:var(--apple);display:grid;place-items:center;margin-top:2px;}
+  .fixed h3{font-size:16px;margin-bottom:3px;} .fixed p{font-size:14px;color:var(--ink-soft);}
+
+  /* Preis */
+  .price{max-width:680px;margin:0 auto;background:linear-gradient(180deg,var(--warm-white),#fbeede);border:1px solid var(--clay);border-radius:var(--radius-lg);padding:clamp(28px,4vw,44px);text-align:center;box-shadow:0 30px 60px -30px rgba(156,82,48,.4);}
+  .price .amount{font-family:var(--serif);font-size:clamp(40px,8vw,64px);font-weight:600;color:var(--ink);line-height:1;}
+  .price .amount small{display:block;font-size:15px;color:var(--ink-faint);font-weight:400;margin-top:8px;font-family:var(--sans);}
+  .price ul{list-style:none;text-align:left;max-width:480px;margin:24px auto;display:flex;flex-direction:column;gap:12px;}
+  .price li{display:flex;gap:11px;align-items:flex-start;font-size:15.5px;color:var(--ink);}
+  .price li svg{flex:none;margin-top:4px;}
+  .price .fine{font-size:13.5px;color:var(--ink-faint);margin-top:14px;}
+  .steps3{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:24px auto 0;max-width:760px;}
+  .steps3 .st{flex:1;min-width:150px;background:var(--sage-soft);border-radius:var(--radius-sm);padding:16px;font-size:14px;color:var(--forest-deep);}
+  .steps3 .st b{display:block;font-family:var(--serif);font-size:16px;margin-bottom:4px;color:var(--forest);}
+
+  footer{background:var(--forest-deep);color:var(--bone-dim);text-align:center;padding:clamp(40px,6vw,64px) 0;}
+  footer .leaf{width:40px;height:40px;margin:0 auto 16px;}
+  footer p{font-size:14.5px;max-width:60ch;margin:0 auto;line-height:1.7;}
+  footer .soft{color:var(--bone-faint);font-size:13px;margin-top:16px;}
+  footer a{color:#e8c9a3;font-weight:600;}
+
+  a:focus-visible,.btn:focus-visible{outline:none;box-shadow:var(--focus);border-radius:var(--radius-pill);}
+  .dark a:focus-visible,.hero a:focus-visible,footer a:focus-visible{box-shadow:var(--focus-d);}
+  @media (max-width:760px){ .cards,.fixed{grid-template-columns:1fr;} }
+  @media (prefers-reduced-motion:reduce){ *{animation:none !important;scroll-behavior:auto;} .btn,.ba-top{transition:none !important;} }
+  </style>
+</head>
+<body>
+
+  <!-- 1 · BEGRÜSSUNG -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="gift">🎁 Ein Geschenk · völlig unverbindlich</span>
+      <span class="eyebrow" style="justify-content:center;color:#cfe0b4;">Eine Vorschau von Lechcode · für dich, Karsten</span>
+      <h1>Hallo Karsten — deine neue Website ist fertig.</h1>
+      <p>Schön, dass du dich auf lechcode.de eingetragen hast. Du wolltest vor allem eins: <b style="color:#fdfcf6;">bei Google besser gefunden werden — ohne laufende Kosten.</b> Genau daran haben wir uns gesetzt. Schau in Ruhe, was möglich ist. Du schuldest uns nichts.</p>
+      <div class="cta">
+        <a class="btn btn-big" href="index.html" target="_blank" rel="noopener">Deine neue Seite ansehen <span class="arr">→</span></a>
+        <a class="btn ghost" href="#vergleich">Erst den Vergleich</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · VORHER/NACHHER SLIDER -->
+  <section class="light" id="vergleich">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow" style="justify-content:center;">Zieh den Regler</span>
+        <h2>Links deine Seite heute. Rechts ab nächster Woche.</h2>
+        <p>Dieselbe Arbeit, dieselben Fotos — nur endlich so präsentiert, wie deine Gärten es verdienen.</p>
+      </div>
+      <div class="ba" id="ba">
+        <img class="ba-bottom" src="assets/slider-neu.jpg" srcset="assets/slider-neu.webp" alt="Die neue Website von Gartengestaltung Scheffler" width="1280" height="1500" fetchpriority="high">
+        <img class="ba-top" id="baTop" src="assets/slider-alt.jpg" srcset="assets/slider-alt.webp" alt="Die bisherige Website" width="1280" height="1500">
+        <span class="ba-lbl alt">Jetzt</span>
+        <span class="ba-lbl neu">Neu</span>
+        <div class="ba-div" id="baDiv">
+          <button class="ba-knob" id="baKnob" type="button" aria-label="Vergleichsregler — mit Pfeiltasten verschiebbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" role="slider">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9C5230" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg>
+          </button>
+        </div>
+      </div>
+      <p class="ba-hint">↔ Regler ziehen (oder antippen)</p>
+    </div>
+  </section>
+
+  <!-- 3 · TACHO -->
+  <section class="dark tacho">
+    <div class="wrap">
+      <span class="eyebrow" style="justify-content:center;">Tempo am Handy</span>
+      <div class="big"><span class="old">7,6 s</span><span class="arrow">→</span><span class="new">~2 s</span></div>
+      <p>So lange dauert es heute am Handy, bis dein wichtigstes Bild geladen ist — die meisten Besucher sind dann längst weg. Die neue Seite ist fast viermal schneller, bei einem Drittel des Gewichts.</p>
+      <div class="mini-stats">
+        <div class="mini"><div class="n">63 → 98</div><div class="l">Google-Tempo-Note (mobil)</div></div>
+        <div class="mini"><div class="n">3× leichter</div><div class="l">814 KB → 269 KB</div></div>
+        <div class="mini"><div class="n">0</div><div class="l">Tracker / Cookies</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · HANDY-REFRAME -->
+  <section class="sand">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow" style="justify-content:center;">Auf dem Handy</span>
+        <h2>So sehen dich deine Kund:innen.</h2>
+        <p>Über <b>60 % aller Website-Besuche</b> kommen heute vom Smartphone (StatCounter). Genau dort entscheidet sich der erste Eindruck.</p>
+      </div>
+      <div class="phones">
+        <div class="phone alt">
+          <div class="frame"><div class="screen"><img src="assets/phone-alt.jpg" alt="Bisherige Seite auf dem Handy" width="500" height="1015" loading="lazy" decoding="async"></div></div>
+          <div class="capwrap"><span class="cap">Heute</span></div>
+        </div>
+        <div class="phone neu">
+          <div class="frame"><div class="screen"><img src="assets/phone-neu.jpg" alt="Neue Seite auf dem Handy" width="500" height="1015" loading="lazy" decoding="async"></div></div>
+          <div class="capwrap"><span class="cap">Ab nächster Woche</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · SEO EHRLICH (Herzstück) -->
+  <section class="light">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow" style="justify-content:center;">Deine Frage, ehrlich beantwortet</span>
+        <h2>Warum stehst du noch nicht ganz oben bei Google?</h2>
+        <p>Das war dein Wunsch im Formular. Hier die ehrliche Antwort — sie hat weniger mit dem Aussehen deiner Seite zu tun, als du denkst. Drei Hebel, zwei davon kostenlos.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <span class="ic">🗺️</span>
+          <h3>Dein Google-Profil</h3>
+          <p>Wir konnten kein Google-Unternehmensprofil von dir finden — keine Sterne, keine Bewertungen. Für die lokale Suche („Gärtner Landsberg") ist das der <b>mit Abstand größte Hebel</b>. Das richten wir gemeinsam ein.</p>
+          <span class="free">kostenlos</span>
+        </div>
+        <div class="card">
+          <span class="ic">📍</span>
+          <h3>Eine Adresse — überall gleich</h3>
+          <p>Auf deinem Logo steht eine andere Adresse als im Impressum und im Branchenbuch. Google braucht <b>eine einheitliche Angabe</b>, um dir zu vertrauen. Kleine Sache, große Wirkung.</p>
+          <span class="free">kostenlos</span>
+        </div>
+        <div class="card">
+          <span class="ic">⚙️</span>
+          <h3>Das Fundament</h3>
+          <p>Tempo, saubere Überschriften, ein echtes Vorschaubild und hinterlegte Standort-Daten (LocalBusiness) — all das steckt schon in deiner neuen Seite. Damit Google versteht: wer du bist und wo.</p>
+          <span class="free">eingebaut</span>
+        </div>
+      </div>
+      <div class="honest">
+        <p><b>Was wir dir NICHT versprechen:</b> „Platz 1 garantiert". Das kann seriös niemand — und wer es verspricht, flunkert. <b>Was wir dir sagen können:</b> Dein Markt in Landsberg ist erstaunlich bewertungsarm — es gibt keinen übermächtigen Platzhirsch. Mit einem sauberen Google-Profil, ein paar echten Bewertungen und dieser Seite als Fundament hast du richtig gute Karten, deutlich nach vorn zu kommen. Und das Beste: deine Domain <b>gartenbau-landsberg.de</b> hat das wichtigste Keyword schon im Namen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · MITKORRIGIERT -->
+  <section class="light sand">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow" style="justify-content:center;">Nebenbei mitgemacht</span>
+        <h2>Das haben wir gleich mit in Ordnung gebracht.</h2>
+      </div>
+      <div class="fixed">
+        <div class="row"><span class="check"><svg width="14" height="14" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Facebook-Tracker entfernt</h3><p>Deine jetzige Seite lädt beim Aufruf ein Facebook-Skript (Cookies, Daten in die USA). Die neue ist komplett cookiefrei — kein Banner nötig.</p></div></div>
+        <div class="row"><span class="check"><svg width="14" height="14" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Datenschutz auf Stand gebracht</h3><p>Deine aktuelle Datenschutzerklärung ist von 2018 und in sich widersprüchlich. Bei Beauftragung schreiben wir sie neu und rechtssicher.</p></div></div>
+        <div class="row"><span class="check"><svg width="14" height="14" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Endlich schnell am Handy</h3><p>Aus 7,6 Sekunden Ladezeit werden rund 2 — Google mag das, deine Besucher noch mehr.</p></div></div>
+        <div class="row"><span class="check"><svg width="14" height="14" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Deine Fotos in Szene gesetzt</h3><p>Deine Gärten und dein Porträt sind deine größte Stärke — jetzt groß, scharf und schnell statt klein und versteckt.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · WAS WIR NOCH BRAUCHEN -->
+  <section class="light">
+    <div class="narrow">
+      <div class="sec-head">
+        <span class="eyebrow" style="justify-content:center;">Damit's perfekt wird</span>
+        <h2>Was wir noch von dir bräuchten.</h2>
+        <p>Ein paar Dinge konnten wir nicht erraten — die klären wir in 30 Minuten gemeinsam. Nichts davon ist dringend.</p>
+      </div>
+      <ul class="checklist">
+        <li><span class="ic">1</span><div><h3>Welche Adresse stimmt?</h3><p>Dein Logo nennt eine andere Adresse als dein Impressum. Welche ist die richtige?</p></div></li>
+        <li><span class="ic">2</span><div><h3>Deine Telefonnummern</h3><p>Festnetz und Mobil sind auf der alten Seite vertauscht — wir sortieren das korrekt.</p></div></li>
+        <li><span class="ic">3</span><div><h3>Deine Fotos</h3><p>Dürfen wir deine Bilder nutzen? Und hast du ein paar Lieblings-Gärten in höherer Auflösung? Die machen die Seite noch stärker.</p></div></li>
+        <li><span class="ic">4</span><div><h3>Ein bisschen über dich</h3><p>Seit wann bist du Gärtner, gibt es eine Ausbildung oder einen Meisterbrief? Das schafft Vertrauen — und hilft bei Google.</p></div></li>
+        <li><span class="ic">5</span><div><h3>Dein Einzugsgebiet</h3><p>Welche Orte rund um Landsberg fährst du an? Die nennen wir gezielt — gut für die lokale Suche.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 8 · PREIS / NÄCHSTER SCHRITT -->
+  <section class="light sand">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow" style="justify-content:center;">Wenn du magst</span>
+        <h2>Dein Startangebot.</h2>
+      </div>
+      <div class="price">
+        <div class="amount">500 €<small>einmalig — komplette Website inklusive Umzug</small></div>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#9C5230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <span><b>Genau dein Wunsch: kein Abo.</b> Die 500 € sind einmalig. Die optionale Pflege (19 €/Monat) ist monatlich kündbar — für dich vermutlich gar nicht nötig.</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#9C5230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <span><b>Fotos alle 2 Jahre tauschen?</b> Machen wir als kleinen Einzelauftrag — <b>ohne versteckte Kosten</b>, du zahlst nur, wenn was zu tun ist.</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#9C5230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <span><b>Umzug inklusive</b> — wir bringen alles live, deine E-Mail-Adressen bleiben dabei unangetastet.</span></li>
+        </ul>
+        <div class="steps3">
+          <div class="st"><b>1. Gespräch</b>30 Minuten mit Michael — ihr geht die Seite durch, du sagst, was anders soll.</div>
+          <div class="st"><b>2. Finale Version</b>Binnen 24 Stunden hast du deine fertige Seite.</div>
+          <div class="st"><b>3. Live</b>Wir ziehen um — fertig.</div>
+        </div>
+        <p class="fine">Gefällt dir der Entwurf? Antworte einfach auf unsere Mail oder ruf an. Gefällt er dir nicht? Auch völlig ok — er war ein Geschenk.</p>
+        <a class="btn btn-big" href="index.html" target="_blank" rel="noopener" style="margin-top:22px;">Deine neue Seite ansehen <span class="arr">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 · FOOTER -->
+  <footer>
+    <div class="narrow">
+      <svg class="leaf" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M33 54 C 33 36, 40 25, 54 18 C 54 36, 47 49, 33 54 Z" fill="#6FA83C"/><path d="M33 54 C 33 40, 25 31, 12 27 C 12 40, 19 50, 33 54 Z" fill="#8CC95F"/></svg>
+      <p><b style="color:#fdfcf6;">Unverbindliche Design-Vorschau</b> — erstellt mit Sorgfalt von Lechcode aus Landsberg am Lech. Diese Seite ist privat und nicht bei Google gelistet.</p>
+      <p class="soft">Fragen? Schreib uns: <a href="mailto:info@lechcode.de">info@lechcode.de</a> · Lenny &amp; Michael · lechcode.de</p>
+    </div>
+  </footer>
+
+  <script>
+  (function(){
+    var ba=document.getElementById('ba'), top=document.getElementById('baTop'),
+        div=document.getElementById('baDiv'), knob=document.getElementById('baKnob');
+    if(!ba)return;
+    function set(p){
+      p=Math.max(0,Math.min(100,p));
+      top.style.clipPath='inset(0 '+(100-p)+'% 0 0)';
+      div.style.left=p+'%';
+      knob.setAttribute('aria-valuenow',Math.round(p));
+    }
+    function fromEvent(e){
+      var r=ba.getBoundingClientRect();
+      var x=(e.touches?e.touches[0].clientX:e.clientX)-r.left;
+      set(x/r.width*100);
+    }
+    var dragging=false;
+    function down(e){dragging=true;try{knob.setPointerCapture&&e.pointerId!=null&&knob.setPointerCapture(e.pointerId);}catch(_){} fromEvent(e); if(e.cancelable&&e.type!=='pointerdown')e.preventDefault();}
+    function move(e){if(dragging)fromEvent(e);}
+    function up(){dragging=false;}
+    ba.addEventListener('pointerdown',down);
+    window.addEventListener('pointermove',move);
+    window.addEventListener('pointerup',up);
+    // Tastatur
+    knob.addEventListener('keydown',function(e){
+      var cur=parseFloat(knob.getAttribute('aria-valuenow'))||50;
+      if(e.key==='ArrowLeft'){set(cur-4);e.preventDefault();}
+      if(e.key==='ArrowRight'){set(cur+4);e.preventDefault();}
+    });
+    set(50);
+  })();
+  </script>
+</body>
+</html>

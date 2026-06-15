@@ -1,0 +1,5 @@
+# Nur die Site-Dateien werden deployt — Arbeitsmaterial bleibt privat
+_projekt/
+material/
+.claude/
+.DS_Store

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  GARTENGESTALTUNG SCHEFFLER · Landsberg am Lech                   ║
+  ║  Lechcode-DEMO (unbeauftragt) · „Natur mit Struktur"             ║
+  ║  Single-File, kein Build. Stil: „nature distilled" (Waldgrün/Sand)║
+  ╠══════════════════════════════════════════════════════════════════╣
+  ║  ⚠ DEMO — noindex aktiv. Texte aus Altseite übernommen+verbessert ║
+  ║    (Inhalte-Freigabe=ja). KEINE erfundenen Fakten — offene Punkte  ║
+  ║    stehen als [KLÄREN: …]. Rechtsseiten = Platzhalter.            ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>document.documentElement.classList.add('js');if(location.search.indexOf('foto')>-1)document.documentElement.classList.add('foto');</script>
+  <!-- ENTFERNEN sobald Impressum+Datenschutz live & vom Kunden freigegeben (auf ALLEN Seiten gleichzeitig) -->
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Gärtner in Landsberg am Lech – Gartengestaltung Scheffler</title>
+  <meta name="description" content="Karsten Scheffler gestaltet und pflegt Gärten in Landsberg am Lech und Umgebung: Neuanlage, Gartenpflege, fachgerechter Hecken- & Formschnitt. Jetzt unverbindlich beraten lassen." />
+  <meta property="og:title" content="Gartengestaltung Scheffler – Gärtner in Landsberg am Lech" />
+  <meta property="og:description" content="Gärten gestalten und pflegen in Landsberg am Lech: Neuanlage, Pflege, Hecken- & Formschnitt, Obstbaum & Outdoor-Bonsai. Persönlich, mit Gespür für die Natur." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:url" content="https://www.gartenbau-landsberg.de/" />
+  <meta property="og:image" content="https://www.gartenbau-landsberg.de/assets/og.jpg" />
+  <meta name="theme-color" content="#2F5848" />
+  <!-- Favicon: grünes Blatt (Markenfarbe), Inline-SVG, kein externer Request -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%232F5848'/%3E%3Cpath d='M32 50 C 32 34, 38 24, 50 18 C 50 34, 44 46, 32 50 Z' fill='%236FA83C'/%3E%3Cpath d='M32 50 C 32 38, 26 30, 16 26 C 16 38, 22 47, 32 50 Z' fill='%238CC95F'/%3E%3Cpath d='M32 51 V36' stroke='%23EAD9C2' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <!-- Schriften lokal gehostet (DSGVO: keine Verbindung zu Google) -->
+  <link rel="stylesheet" href="assets/fonts.css">
+  <!-- Hero-Bild vorladen (EIN preload mit imagesrcset — LCP-sicher, s. Master-Prompt-Learnings) -->
+  <link rel="preload" as="image" href="assets/hero-garten-1200.jpg" imagesrcset="assets/hero-garten-800.webp 800w, assets/hero-garten-1200.webp 1200w" imagesizes="100vw" type="image/webp">
+
+  <!-- JSON-LD: nur sichtbare, belegte Angaben. ⚠ Adresse/Telefon vor Go-Live verifizieren (s. OFFENE-FRAGEN A1/A2). Kein AggregateRating (self-serving). -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Gartengestaltung Scheffler",
+    "description": "Garten- und Landschaftsgestaltung, Gartenpflege und fachgerechter Hecken-, Form- und Obstbaumschnitt in Landsberg am Lech und Umgebung.",
+    "url": "https://www.gartenbau-landsberg.de/",
+    "image": "https://www.gartenbau-landsberg.de/assets/og.jpg",
+    "telephone": "+49 8191 4016820",
+    "founder": { "@type": "Person", "name": "Karsten Scheffler" },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Christoph-Thomas-Scheffler-Straße 1",
+      "postalCode": "86899",
+      "addressLocality": "Landsberg am Lech",
+      "addressRegion": "Bayern",
+      "addressCountry": "DE"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Landsberg am Lech" },
+      { "@type": "AdministrativeArea", "name": "Landkreis Landsberg am Lech" }
+    ],
+    "knowsAbout": ["Gartengestaltung","Gartenpflege","Heckenschnitt","Formschnitt","Obstbaumschnitt","Outdoor-Bonsai","Landschaftsbau"],
+    "sameAs": ["https://www.facebook.com/gartenbau.landsberg.de/"]
+  }
+  </script>
+
+  <style>
+  /* ===== 1 · TOKENS — „nature distilled" (Waldgrün / Sand / Lehm) ===== */
+  :root{
+    --forest:#2F5848; --forest-deep:#24463A; --forest-2:#3a6a57;
+    --cream:#F4EFE6; --sand:#EAD9C2; --warm-white:#FBF7EF;
+    --sage:#A9B9A0; --sage-soft:#DCE6D8;
+    --clay:#9C5230; --clay-deep:#834525;
+    --apple:#6FA83C; --apple-deep:#5b8f30;
+    --ink:#23201B; --ink-soft:#5C5448; --ink-faint:#8a8175;
+    --bone:#F4EFE6; --bone-dim:#cdd6c8; --bone-faint:#9fb0a2;
+    --line-l:rgba(35,32,27,.12); --line-d:rgba(244,239,230,.16);
+    --serif:"Fraunces","Fraunces Fallback",Georgia,"Times New Roman",serif;
+    --sans:"Inter","Inter Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+
+    --radius:18px; --radius-lg:24px; --radius-sm:11px; --radius-pill:999px;
+    --nav-h:68px;
+
+    /* fluide Skala — ACHTUNG: +/- immer mit Leerzeichen (clamp-Falle) */
+    --step--1:clamp(13px, .35vw + 12.2px, 14px);
+    --step-0:clamp(16px, .4vw + 15px, 17px);
+    --step-1:clamp(18px, .6vw + 16.5px, 20px);
+    --step-2:clamp(21px, 1.1vw + 18px, 25px);
+    --step-3:clamp(25px, 2vw + 19px, 33px);
+    --step-4:clamp(30px, 3.4vw + 18px, 47px);
+    --step-5:clamp(33px, 5.4vw + 14px, 66px);
+    --lh-tight:1.08; --lh-snug:1.16; --lh-body:1.62; --lh-relaxed:1.72;
+    --ls-display:-.02em; --ls-h2:-.014em; --ls-label:.14em;
+    --space-2:clamp(14px, 1.6vw, 18px);
+    --space-3:clamp(20px, 2.4vw, 26px);
+    --space-4:clamp(30px, 3.6vw, 40px);
+    --space-5:clamp(44px, 5.5vw, 64px);
+    --space-6:clamp(60px, 9vw, 116px);
+
+    --shadow-l:inset 0 1px 0 rgba(255,255,255,.7), 0 2px 6px -3px rgba(47,88,72,.16), 0 24px 48px -28px rgba(47,88,72,.28);
+    --shadow-d:0 1px 0 rgba(255,255,255,.04), 0 24px 48px -28px rgba(0,0,0,.6), 0 40px 90px -60px rgba(47,88,72,.5);
+    --edge-l:inset 0 1px 0 rgba(255,255,255,.75);
+    --edge-d:inset 0 1px 0 rgba(244,239,230,.06);
+    --glow-l:inset 0 1px 0 rgba(255,255,255,.7), 0 0 0 1px rgba(156,82,48,.22), 0 22px 46px -24px rgba(47,88,72,.34);
+    --ease:cubic-bezier(.22,.61,.36,1);
+    --focus:0 0 0 3px rgba(156,82,48,.45);
+    --focus-d:0 0 0 3px rgba(140,201,95,.5);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 12px);-webkit-text-size-adjust:100%;}
+  body{background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:var(--lh-body);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:var(--lh-snug);letter-spacing:var(--ls-h2);text-wrap:balance;}
+  a{color:inherit;text-decoration:none;}
+  img,svg{display:block;max-width:100%;}
+  ::selection{background:rgba(156,82,48,.22);}
+  .wrap{width:min(1120px,92vw);margin-inline:auto;}
+  section{padding:var(--space-6) 0;position:relative;}
+  .sec-head{max-width:58ch;margin-bottom:var(--space-5);}
+  .sec-head h2{font-size:var(--step-4);margin-top:var(--space-2);}
+  .sec-head p{font-size:var(--step-1);margin-top:var(--space-3);line-height:var(--lh-relaxed);}
+
+  /* Flächen-Themen */
+  .light{background:var(--cream);color:var(--ink);}
+  .sand{background:var(--sand);}
+  .dark{background:var(--forest);color:var(--bone);}
+  .dark h1,.dark h2,.dark h3{color:#fbfaf3;}
+  .dark .sec-head p,.dark .lead{color:var(--bone-dim);}
+  .light h2,.light h3,.sand h2,.sand h3{color:var(--ink);}
+  .sec-head p,.lead{color:var(--ink-soft);}
+
+  .eyebrow{font-family:var(--sans);font-weight:600;font-size:var(--step--1);letter-spacing:var(--ls-label);text-transform:uppercase;display:inline-flex;align-items:center;gap:9px;color:var(--clay);}
+  .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--apple);flex:none;}
+  .dark .eyebrow{color:#e8c9a3;} .dark .eyebrow::before{background:var(--apple);}
+
+  /* Wortmarke */
+  .wm{display:inline-flex;align-items:center;gap:10px;font-family:var(--serif);font-weight:600;letter-spacing:-.01em;line-height:1;color:var(--ink);}
+  .wm .leaf{width:30px;height:30px;flex:none;}
+  .dark .wm,.site-footer .wm{color:#fbfaf3;}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;gap:9px;cursor:pointer;border:none;
+    background:linear-gradient(180deg,var(--clay),var(--clay-deep));color:#fff;
+    font-family:var(--sans);font-weight:650;font-size:15.5px;padding:14px 24px;border-radius:var(--radius-pill);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.18), 0 16px 28px -14px rgba(140,69,37,.6);
+    transition:transform .28s var(--ease),box-shadow .28s var(--ease);white-space:nowrap;}
+  .btn:hover{transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.18), 0 22px 38px -16px rgba(140,69,37,.7);}
+  .btn:active{transform:translateY(0);transition-duration:.08s;}
+  .btn .arr{transition:transform .25s var(--ease);} .btn:hover .arr{transform:translateX(4px);}
+  .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line-l);box-shadow:none;font-weight:600;}
+  .btn-ghost:hover{background:rgba(47,88,72,.06);border-color:rgba(47,88,72,.4);box-shadow:none;transform:translateY(-2px);}
+  .dark .btn-ghost{color:var(--bone);border-color:rgba(244,239,230,.3);}
+  .dark .btn-ghost:hover{background:rgba(244,239,230,.08);border-color:rgba(244,239,230,.55);}
+
+  /* ===== 2 · NAV ===== */
+  .nav{position:sticky;top:0;z-index:100;height:var(--nav-h);background:rgba(244,239,230,.82);backdrop-filter:saturate(140%) blur(14px);border-bottom:1px solid var(--line-l);}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:100%;}
+  .nav .wm{font-size:20px;}
+  .nav-links{display:flex;align-items:center;gap:28px;}
+  .nav-links a:not(.btn){font-size:15px;color:var(--ink-soft);font-weight:500;position:relative;padding:4px 0;transition:color .2s var(--ease);}
+  .nav-links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-1px;width:0;height:2px;background:var(--clay);border-radius:2px;transition:width .25s var(--ease);}
+  .nav-links a:not(.btn):hover{color:var(--ink);} .nav-links a:not(.btn):hover::after{width:100%;}
+  .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;}
+  .nav-toggle span{display:block;width:24px;height:2px;background:var(--ink);border-radius:2px;transition:.3s;}
+  .nav-toggle span+span{margin-top:6px;}
+  .leaf-mark{color:var(--apple);}
+
+  /* ===== 3 · HERO ===== */
+  .hero{position:relative;isolation:isolate;min-height:min(88svh,720px);display:flex;align-items:center;
+    padding:calc(var(--nav-h) + 4vw) 0 var(--space-6);overflow:hidden;color:var(--bone);}
+  .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;}
+  .hero::after{content:"";position:absolute;inset:0;z-index:-1;
+    background:linear-gradient(180deg,rgba(36,70,58,.62),rgba(36,70,58,.48) 38%,rgba(28,54,44,.86)),radial-gradient(60vmax 50vmax at 18% 12%,rgba(47,88,72,.30),transparent 60%);}
+  .hero .wrap{position:relative;max-width:none;}
+  .hero-inner{max-width:60ch;}
+  .hero h1{font-size:var(--step-5);line-height:var(--lh-tight);letter-spacing:var(--ls-display);margin:var(--space-2) 0 0;color:#fdfcf6;max-width:18ch;}
+  .hero h1 em{font-style:italic;color:#cfe0b4;}
+  .hero-sub{font-size:var(--step-1);line-height:var(--lh-relaxed);color:#eef1e7;margin-top:var(--space-3);max-width:52ch;}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:var(--space-4);align-items:center;}
+  .hero-tel{display:inline-flex;align-items:center;gap:9px;font-weight:600;color:#fdfcf6;font-size:var(--step-0);}
+  .hero-tel svg{flex:none;}
+
+  /* ===== Vertrauensleiste ===== */
+  .trust-bar{background:var(--forest-deep);color:var(--bone);border-top:1px solid rgba(244,239,230,.08);}
+  .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:clamp(22px,3vw,30px) 0;}
+  .trust-item{display:flex;gap:12px;align-items:flex-start;font-size:var(--step-0);color:var(--bone-dim);line-height:1.4;}
+  .trust-item svg{flex:none;color:var(--apple);margin-top:2px;}
+  .trust-item b{color:#fbfaf3;font-weight:600;display:block;font-family:var(--serif);}
+
+  /* ===== Über mich ===== */
+  .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,60px);align-items:center;}
+  .about-portrait{position:relative;}
+  .about-portrait img{width:100%;border-radius:var(--radius-lg);box-shadow:var(--shadow-l);aspect-ratio:577/701;object-fit:cover;}
+  .about-portrait .leaf-deco{position:absolute;right:-14px;bottom:-14px;width:84px;color:var(--apple);opacity:.9;background:var(--cream);border-radius:50%;padding:10px;box-shadow:var(--shadow-l);}
+  .about-body .lead{font-size:var(--step-1);color:var(--ink-soft);}
+  .quote{font-family:var(--serif);font-style:italic;font-size:var(--step-3);line-height:1.32;color:var(--forest);margin:var(--space-4) 0;padding-left:22px;border-left:3px solid var(--apple);text-wrap:balance;}
+  .sign{display:flex;align-items:center;gap:14px;margin-top:var(--space-3);}
+  .sign .name{font-family:var(--serif);font-weight:600;font-size:var(--step-1);color:var(--ink);}
+  .sign .role{font-size:var(--step--1);color:var(--ink-faint);}
+
+  /* ===== Leistungen ===== */
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .svc{background:var(--warm-white);border:1px solid var(--line-l);border-radius:var(--radius);padding:28px 24px;box-shadow:var(--edge-l), var(--shadow-l);transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s var(--ease);}
+  .svc:hover{transform:translateY(-3px);box-shadow:var(--glow-l);border-color:rgba(156,82,48,.3);}
+  .svc .ic{display:inline-grid;place-items:center;width:50px;height:50px;border-radius:14px;background:var(--sage-soft);color:var(--forest);margin-bottom:16px;box-shadow:inset 0 0 0 1px rgba(47,88,72,.12);}
+  .svc h3{font-size:var(--step-2);margin-bottom:8px;color:var(--ink);}
+  .svc p{font-size:var(--step-0);color:var(--ink-soft);}
+
+  /* ===== Projekte / Galerie ===== */
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+  .gallery figure{position:relative;overflow:hidden;border-radius:var(--radius-sm);box-shadow:var(--shadow-l);background:var(--sage-soft);}
+  .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .5s var(--ease);}
+  .gallery figure:hover img{transform:scale(1.05);}
+  .gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:22px 14px 10px;font-size:13px;color:#fff;
+    background:linear-gradient(180deg,transparent,rgba(20,40,32,.78));opacity:0;transform:translateY(6px);transition:opacity .3s var(--ease),transform .3s var(--ease);}
+  .gallery figure:hover figcaption,.gallery figure:focus-within figcaption{opacity:1;transform:none;}
+  .gallery .wide{grid-column:span 2;}
+  .gallery img.tall{aspect-ratio:4/3;}
+
+  /* ===== Ablauf ===== */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .step{position:relative;background:var(--warm-white);border:1px solid var(--line-l);border-radius:var(--radius);padding:28px 24px;box-shadow:var(--edge-l), var(--shadow-l);}
+  .step .num{font-family:var(--serif);font-weight:600;font-size:var(--step-1);color:var(--forest);background:var(--sage-soft);width:46px;height:46px;border-radius:var(--radius-sm);display:grid;place-items:center;margin-bottom:16px;box-shadow:inset 0 0 0 1px rgba(47,88,72,.14);}
+  .step h3{font-size:var(--step-2);margin-bottom:7px;color:var(--ink);} .step p{color:var(--ink-soft);font-size:var(--step-0);}
+
+  /* ===== Region ===== */
+  .region-card{background:radial-gradient(120% 150% at 0% 0%,var(--forest-2),var(--forest) 65%);color:var(--bone);border-radius:var(--radius-lg);padding:clamp(28px,4.5vw,52px);box-shadow:var(--shadow-d);position:relative;overflow:hidden;}
+  .region-card h2{color:#fbfaf3;font-size:var(--step-3);}
+  .region-card p{color:var(--bone-dim);margin-top:14px;max-width:60ch;}
+  .places{display:flex;flex-wrap:wrap;gap:9px;margin-top:var(--space-4);}
+  .place{font-size:14px;color:#eef1e7;background:rgba(244,239,230,.1);border:1px solid rgba(244,239,230,.16);padding:7px 14px;border-radius:var(--radius-pill);}
+
+  /* ===== Kontakt ===== */
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px;align-items:start;}
+  .contact-info{display:flex;flex-direction:column;gap:16px;}
+  .info-row{display:flex;gap:14px;align-items:flex-start;}
+  .info-row .ic{display:grid;place-items:center;width:46px;height:46px;border-radius:var(--radius-sm);background:var(--sage-soft);color:var(--forest);flex:none;box-shadow:inset 0 0 0 1px rgba(47,88,72,.12);}
+  .info-row .lbl{font-size:13px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.06em;}
+  .info-row a,.info-row .val{font-size:var(--step-1);color:var(--ink);font-weight:600;}
+  .info-row a:hover{color:var(--clay);}
+  .promise{margin-top:var(--space-3);font-size:var(--step-0);color:var(--ink-soft);background:var(--sage-soft);border:1px solid rgba(47,88,72,.12);border-radius:var(--radius-sm);padding:14px 16px;}
+  .card{background:var(--warm-white);border:1px solid var(--line-l);border-radius:var(--radius-lg);padding:30px 28px;box-shadow:var(--edge-l), var(--shadow-l);}
+  .demo-flag{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--clay-deep);background:rgba(156,82,48,.08);border:1px solid rgba(156,82,48,.22);border-radius:var(--radius-sm);padding:11px 14px;margin-bottom:18px;line-height:1.45;}
+  .field{display:flex;flex-direction:column;gap:6px;margin-bottom:15px;}
+  .field label{font-size:13px;font-weight:600;color:var(--ink-soft);}
+  .field input,.field textarea,.field select{font-family:var(--sans);font-size:15px;color:var(--ink);background:var(--cream);border:1.5px solid var(--line-l);border-radius:var(--radius-sm);padding:12px 14px;transition:border-color .2s var(--ease),box-shadow .2s var(--ease);width:100%;}
+  .field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--clay);box-shadow:var(--focus);}
+  .field textarea{resize:vertical;min-height:96px;}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .form .btn{width:100%;justify-content:center;margin-top:4px;}
+  .form-msg{display:none;margin-top:14px;padding:14px 16px;border-radius:var(--radius-sm);font-size:var(--step-0);line-height:1.55;}
+  .form-msg.ok{display:block;background:rgba(111,168,60,.14);border:1px solid rgba(111,168,60,.45);color:#3f5a23;}
+  .form-note{display:flex;align-items:flex-start;gap:8px;margin-top:14px;color:var(--ink-faint);font-size:var(--step--1);}
+  .hp{position:absolute;left:-9999px;opacity:0;height:0;width:0;}
+
+  /* ===== Footer ===== */
+  .site-footer{background:var(--forest-deep);color:var(--bone-dim);padding:clamp(48px,7vw,72px) 0 110px;}
+  @media (min-width:781px){.site-footer{padding-bottom:40px;}}
+  .foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:32px;}
+  .foot-brand .wm{font-size:21px;}
+  .foot-brand .tag{font-family:var(--serif);font-style:italic;font-size:16px;color:var(--bone);margin-top:12px;}
+  .foot-brand .addr{font-size:13.5px;color:var(--bone-faint);margin-top:14px;line-height:1.8;}
+  .foot-col h3{font-family:var(--serif);font-size:14px;letter-spacing:.02em;color:#e8c9a3;font-weight:600;margin-bottom:14px;}
+  .foot-col a{display:block;color:var(--bone-dim);padding:5px 0;transition:color .2s var(--ease);font-size:14.5px;}
+  .foot-col a:hover{color:#fbfaf3;}
+  .foot-bottom{margin-top:clamp(32px,5vw,48px);padding-top:22px;border-top:1px solid rgba(244,239,230,.14);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--bone-faint);}
+  .foot-bottom .hand{font-family:var(--serif);font-style:italic;font-size:16px;color:#e8c9a3;}
+
+  /* ===== Sticky Mobil-Kontaktleiste ===== */
+  .mobile-bar{position:fixed;left:0;right:0;bottom:0;z-index:120;display:none;grid-template-columns:1fr 1fr 1fr;
+    background:rgba(36,70,58,.97);backdrop-filter:blur(8px);border-top:1px solid rgba(244,239,230,.16);box-shadow:0 -10px 30px -12px rgba(0,0,0,.5);}
+  .mobile-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:9px 4px;color:var(--bone);font-size:11.5px;font-weight:600;min-height:58px;}
+  .mobile-bar a+a{border-left:1px solid rgba(244,239,230,.14);}
+  .mobile-bar a svg{flex:none;}
+  .mobile-bar a.accent{background:linear-gradient(180deg,var(--clay),var(--clay-deep));}
+
+  /* ===== Fokus / A11y ===== */
+  :where(a,button,.btn,input,textarea,select,.wm):focus-visible{outline:none;box-shadow:var(--focus);border-radius:var(--radius-sm);}
+  .dark a:focus-visible,.hero a:focus-visible,.region-card a:focus-visible,.mobile-bar a:focus-visible,.trust-bar a:focus-visible{box-shadow:var(--focus-d);}
+  .skip{position:absolute;left:-999px;top:8px;z-index:200;background:var(--clay);color:#fff;padding:10px 16px;border-radius:var(--radius-sm);font-weight:600;}
+  .skip:focus{left:16px;}
+
+  /* ===== Reveal & Responsive ===== */
+  .js .reveal > *{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease);}
+  .js .reveal.in > *{opacity:1;transform:none;}
+  .js .reveal .stagger > *{opacity:0;transform:translateY(16px);transition:opacity .6s var(--ease),transform .6s var(--ease);}
+  .js .reveal.in .stagger > *{opacity:1;transform:none;}
+  .js .reveal.in .stagger > *:nth-child(2){transition-delay:.06s;}
+  .js .reveal.in .stagger > *:nth-child(3){transition-delay:.12s;}
+  .js .reveal.in .stagger > *:nth-child(4){transition-delay:.18s;}
+  .js .reveal.in .stagger > *:nth-child(5){transition-delay:.24s;}
+  .js .reveal.in .stagger > *:nth-child(6){transition-delay:.30s;}
+  .foto .reveal > *,.foto .reveal .stagger > *{opacity:1 !important;transform:none !important;transition:none !important;}
+  .foto .mobile-bar{display:none !important;}
+
+  @media (max-width:920px){
+    .nav-links{position:fixed;inset:var(--nav-h) 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:var(--warm-white);border-bottom:1px solid var(--line-l);padding:10px 6vw 22px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:.3s;box-shadow:var(--shadow-l);}
+    .nav-links.open{transform:none;opacity:1;pointer-events:auto;}
+    .nav-links a:not(.btn){padding:14px 0;border-bottom:1px solid var(--line-l);} .nav-links a:not(.btn)::after{display:none;}
+    .nav-links .btn{margin-top:14px;justify-content:center;} .nav-toggle{display:block;}
+    .about-grid,.contact-grid{grid-template-columns:1fr;}
+    .about-portrait{max-width:420px;}
+    .trust-grid{grid-template-columns:1fr 1fr;}
+    .svc-grid,.steps{grid-template-columns:1fr 1fr;}
+    .gallery{grid-template-columns:repeat(3,1fr);}
+  }
+  @media (max-width:600px){
+    .svc-grid,.steps,.trust-grid{grid-template-columns:1fr;}
+    .gallery{grid-template-columns:1fr 1fr;gap:9px;} .gallery .wide{grid-column:span 2;}
+    .two{grid-template-columns:1fr;}
+    .hero-cta{flex-direction:column;align-items:stretch;} .hero-cta .btn{justify-content:center;} .hero-tel{justify-content:center;margin-top:4px;}
+    .foot-top{grid-template-columns:1fr;} .foot-bottom{flex-direction:column;align-items:flex-start;}
+    .mobile-bar{display:grid;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none !important;scroll-behavior:auto !important;}
+    .js .reveal > *,.js .reveal .stagger > *{opacity:1 !important;transform:none !important;transition:none !important;}
+    .svc,.step,.btn,.gallery img{transition:none !important;transform:none !important;}
+  }
+  @media print{
+    .nav,.hero-cta,.mobile-bar,.nav-toggle,.demo-flag,form,.gallery{display:none !important;}
+    body{background:#fff;color:#000;}
+    .hero{min-height:auto;color:#000;padding:20px 0;} .hero::after,.hero-img{display:none;}
+    .hero h1,.hero-sub,.hero-tel{color:#000;}
+    a{color:#000;text-decoration:underline;}
+    section{padding:14px 0;}
+  }
+  </style>
+</head>
+
+<body id="top">
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+
+  <!-- NAV -->
+  <header class="nav">
+    <nav class="wrap nav-in" aria-label="Hauptnavigation">
+      <a class="wm" href="#top" aria-label="Gartengestaltung Scheffler — Startseite">
+        <svg class="leaf leaf-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <path d="M33 54 C 33 36, 40 25, 54 18 C 54 36, 47 49, 33 54 Z" fill="currentColor"/>
+          <path d="M33 54 C 33 40, 25 31, 12 27 C 12 40, 19 50, 33 54 Z" fill="#8CC95F"/>
+          <path d="M33 55 V37" stroke="#2F5848" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <span>Gartengestaltung&nbsp;Scheffler</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#ueber">Über mich</a>
+        <a href="#projekte">Projekte</a>
+        <a href="#kontakt">Kontakt</a>
+        <a class="btn" href="#kontakt">Garten-Gespräch <span class="arr">→</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <picture>
+        <source type="image/webp" srcset="assets/hero-garten-800.webp 800w, assets/hero-garten-1200.webp 1200w" sizes="100vw">
+        <img class="hero-img" src="assets/hero-garten-1200.jpg" srcset="assets/hero-garten-800.jpg 800w, assets/hero-garten-1200.jpg 1200w" sizes="100vw" width="1200" height="900" alt="Von Karsten Scheffler gestaltetes Hangbeet mit Trittsteinen und Stauden in Landsberg am Lech" fetchpriority="high">
+      </picture>
+      <div class="wrap">
+        <div class="hero-inner">
+          <span class="eyebrow">Gartengestaltung Scheffler · Landsberg am Lech</span>
+          <h1>Gärten <em>gestalten und pflegen</em> in Landsberg am Lech.</h1>
+          <p class="hero-sub">Von der Neuanlage bis zur laufenden Pflege — natürlich, durchdacht und persönlich von Karsten Scheffler. Damit Ihr Garten nicht nur gut aussieht, sondern sich auch gut anfühlt.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#kontakt">Kostenloses Garten-Gespräch <span class="arr">→</span></a>
+            <a class="btn btn-ghost" href="#projekte">Projekte ansehen</a>
+          </div>
+          <!-- HIER: Telefonnummer (vor Go-Live prüfen, s. OFFENE-FRAGEN A2) -->
+          <a class="hero-tel" href="tel:+4981914016820" style="margin-top:18px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            08191 4016820
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VERTRAUENSLEISTE -->
+    <section class="trust-bar" style="padding:0;">
+      <div class="wrap">
+        <div class="trust-grid">
+          <div class="trust-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span><b>Landsberg &amp; Umgebung</b>aus der Region, für die Region</span></div>
+          <div class="trust-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Gestaltung &amp; Pflege</b>alles aus einer Hand</span></div>
+          <div class="trust-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg><span><b>Ein fester Ansprechpartner</b>von der Idee bis zur Pflege</span></div>
+          <div class="trust-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v6M12 8c-3 0-5 2-5 5 2 0 4-1 5-3 1 2 3 3 5 3 0-3-2-5-5-5zM12 22V12"/></svg><span><b>Schnitt zum richtigen Zeitpunkt</b>Hecken, Form &amp; Obstbaum</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÜBER MICH -->
+    <section class="light reveal" id="ueber">
+      <div class="wrap">
+        <div class="about-grid">
+          <div class="about-portrait">
+            <picture>
+              <source type="image/webp" srcset="assets/karsten-portrait-480.webp 480w, assets/karsten-portrait-700.webp 700w" sizes="(max-width:920px) 420px, 40vw">
+              <img src="assets/karsten-portrait-700.jpg" srcset="assets/karsten-portrait-480.jpg 480w, assets/karsten-portrait-700.jpg 700w" sizes="(max-width:920px) 420px, 40vw" width="577" height="701" alt="Karsten Scheffler, Gärtner aus Landsberg am Lech, lächelnd an einem Bachlauf" loading="lazy" decoding="async">
+              <svg class="leaf-deco" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M33 54 C 33 36, 40 25, 54 18 C 54 36, 47 49, 33 54 Z" fill="currentColor"/><path d="M33 54 C 33 40, 25 31, 12 27 C 12 40, 19 50, 33 54 Z" fill="#8CC95F"/></svg>
+            </picture>
+          </div>
+          <div class="about-body">
+            <span class="eyebrow">Ihr Gärtner</span>
+            <h2 style="font-size:var(--step-4);margin-top:var(--space-2);">Hallo, ich bin Karsten Scheffler.</h2>
+            <p class="lead" style="margin-top:var(--space-3);">Ich plane, gestalte und pflege individuelle Gärten und Außenanlagen im Raum Landsberg am Lech — zuverlässig, persönlich und mit Blick fürs Detail. Mit Erfahrung und einem guten Gespür für die Natur sorge ich dafür, dass aus Ihren Wünschen ein Garten wird, der dauerhaft Freude macht.</p>
+            <blockquote class="quote">„Ich gestalte Gärten, die nicht nur gut aussehen, sondern sich auch gut anfühlen — natürlich, funktional und individuell auf Sie abgestimmt."</blockquote>
+            <p class="lead">Jeder Garten beginnt mit einem Gespräch. Ich höre zu, schaue mir die Gegebenheiten vor Ort an und entwickle daraus eine Lösung, die zu Ihnen und Ihrem Grundstück passt.</p>
+            <div class="sign">
+              <span class="leaf-mark"><svg width="34" height="34" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M33 54 C 33 36, 40 25, 54 18 C 54 36, 47 49, 33 54 Z" fill="currentColor"/><path d="M33 54 C 33 40, 25 31, 12 27 C 12 40, 19 50, 33 54 Z" fill="#8CC95F"/></svg></span>
+              <span><span class="name">Karsten Scheffler</span><br><span class="role">Gartengestaltung Scheffler · „Natur mit Struktur"</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEISTUNGEN -->
+    <section class="sand reveal" id="leistungen">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="eyebrow">Leistungen · gestalten &amp; pflegen</span>
+          <h2>Ein Garten, der Form hat — und sie behält.</h2>
+          <p>Ob kleine Veränderung oder komplette Neugestaltung, einmalige Anlage oder regelmäßige Pflege: Sie bekommen alles aus einer Hand, fachgerecht und zum richtigen Zeitpunkt.</p>
+        </div>
+        <div class="svc-grid stagger">
+          <div class="svc">
+            <span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C7 7 7 13 12 22 17 13 17 7 12 2z"/><path d="M12 10v12"/></svg></span>
+            <h3>Gartengestaltung &amp; Neuanlage</h3>
+            <p>Von der Idee bis zum fertigen Garten: Beetkonzepte, Pflanzpläne, Natursteinmauern, Wege und Terrassenbepflanzung — durchdacht angelegt, damit es nicht nur jetzt, sondern in Jahren noch stimmt.</p>
+          </div>
+          <div class="svc">
+            <span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20s4-2 9-2 9 2 9 2"/><path d="M12 18V8"/><path d="M12 8c-2 0-3.5-1.5-3.5-3.5C10.5 4.5 12 6 12 8zM12 8c2 0 3.5-1.5 3.5-3.5C13.5 4.5 12 6 12 8z"/></svg></span>
+            <h3>Regelmäßige Gartenpflege</h3>
+            <p>Damit Ihre grüne Oase gepflegt bleibt, ohne dass Sie sich kümmern müssen: Rasen, Beete, Pflanzen — verlässlich betreut über die Saison, ganz nach Absprache.</p>
+          </div>
+          <div class="svc">
+            <span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4l6 6"/><path d="M3 21l9-9"/><path d="M14 4l-3 3"/><circle cx="17" cy="7" r="3"/></svg></span>
+            <h3>Hecken-, Form- &amp; Gehölzschnitt</h3>
+            <p>Mein Schwerpunkt: exakter Schnitt von Hecken und Ziergehölzen für gesundes Wachstum und eine schöne Form — fachgerecht und zur richtigen Jahreszeit ausgeführt.</p>
+          </div>
+          <div class="svc">
+            <span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M12 15v7"/><path d="M9 22h6"/></svg></span>
+            <h3>Obstbaumschnitt</h3>
+            <p>Sommer- wie Winterschnitt: Mit präziser Schnitttechnik fördere ich die Blütenbildung, halte Ihre Obstbäume gesund und sorge für gute Erträge.</p>
+          </div>
+          <div class="svc">
+            <span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c4-3 6-7 6-11a6 6 0 0 0-12 0c0 4 2 8 6 11z"/><circle cx="12" cy="11" r="2.2"/></svg></span>
+            <h3>Outdoor-Bonsai-Pflege</h3>
+            <p>Eine Spezialität: Beschnitt und Pflege Ihres Outdoor-Bonsai mit dem nötigen Fingerspitzengefühl — damit Form und Vitalität über Jahre erhalten bleiben.</p>
+          </div>
+          <div class="svc">
+            <span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l4-4 3 3 7-7"/><path d="M14 9h3v3"/><path d="M3 21h18"/></svg></span>
+            <h3>Erd- &amp; Pflasterarbeiten</h3>
+            <p>Vom Hangbeet bis zur Geländemodellierung: Erdarbeiten mit Minibagger und Radlader — die solide Grundlage für jeden Garten, der Bestand haben soll.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJEKTE -->
+    <section class="light reveal" id="projekte">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="eyebrow">Projekte</span>
+          <h2>Ein Blick in echte Gärten.</h2>
+          <p>Eine kleine Auswahl aus Landsberg und Umgebung — Beete, Natursteinmauern, Form­schnitt und Neuanlagen. Alles selbst geplant und umgesetzt.</p>
+        </div>
+        <div class="gallery">
+          <figure><picture><source type="image/webp" srcset="assets/projekt-01-400.webp 400w, assets/projekt-01-800.webp 800w" sizes="(max-width:600px) 50vw, (max-width:920px) 33vw, 25vw"><img src="assets/projekt-01-800.jpg" srcset="assets/projekt-01-400.jpg 400w, assets/projekt-01-800.jpg 800w" sizes="(max-width:600px) 50vw, (max-width:920px) 33vw, 25vw" width="800" height="600" alt="Neu angelegtes Beet mit Koniferen und Natursteinmauer" loading="lazy" decoding="async"></picture><figcaption>Beet mit Natursteinmauer</figcaption></figure>
+          <figure><picture><source type="image/webp" srcset="assets/projekt-05-400.webp 400w, assets/projekt-05-800.webp 800w" sizes="(max-width:600px) 50vw, 25vw"><img src="assets/projekt-05-800.jpg" srcset="assets/projekt-05-400.jpg 400w, assets/projekt-05-800.jpg 800w" sizes="(max-width:600px) 50vw, 25vw" width="800" height="600" alt="Frisch geschnittene, formschöne Koniferenhecke" loading="lazy" decoding="async"></picture><figcaption>Heckenschnitt in Form</figcaption></figure>
+          <figure><picture><source type="image/webp" srcset="assets/projekt-06-400.webp 400w, assets/projekt-06-800.webp 800w" sizes="(max-width:600px) 50vw, 25vw"><img src="assets/projekt-06-800.jpg" srcset="assets/projekt-06-400.jpg 400w, assets/projekt-06-800.jpg 800w" sizes="(max-width:600px) 50vw, 25vw" width="800" height="600" alt="Ovales Beet mit Buchskugeln und Rindenmulch" loading="lazy" decoding="async"></picture><figcaption>Buchskugeln &amp; Beet</figcaption></figure>
+          <figure><picture><source type="image/webp" srcset="assets/projekt-03-400.webp 400w, assets/projekt-03-800.webp 800w" sizes="(max-width:600px) 50vw, 25vw"><img src="assets/projekt-03-800.jpg" srcset="assets/projekt-03-400.jpg 400w, assets/projekt-03-800.jpg 800w" sizes="(max-width:600px) 50vw, 25vw" width="800" height="600" alt="Lavendelbeet mit Steinbrunnen und Pflasterweg" loading="lazy" decoding="async"></picture><figcaption>Lavendel &amp; Brunnen</figcaption></figure>
+          <figure><picture><source type="image/webp" srcset="assets/projekt-04-400.webp 400w, assets/projekt-04-800.webp 800w" sizes="(max-width:600px) 50vw, 25vw"><img src="assets/projekt-04-800.jpg" srcset="assets/projekt-04-400.jpg 400w, assets/projekt-04-800.jpg 800w" sizes="(max-width:600px) 50vw, 25vw" width="800" height="600" alt="Steingarten mit antikem Pflug als Blickfang" loading="lazy" decoding="async"></picture><figcaption>Steingarten mit Charakter</figcaption></figure>
+          <figure><picture><source type="image/webp" srcset="assets/projekt-02-400.webp 400w, assets/projekt-02-800.webp 800w" sizes="(max-width:600px) 50vw, 25vw"><img src="assets/projekt-02-800.jpg" srcset="assets/projekt-02-400.jpg 400w, assets/projekt-02-800.jpg 800w" sizes="(max-width:600px) 50vw, 25vw" width="800" height="600" alt="Garten mit Spalierbaum und Natursteinmauer" loading="lazy" decoding="async"></picture><figcaption>Spalierbaum &amp; Mauer</figcaption></figure>
+          <figure><picture><source type="image/webp" srcset="assets/projekt-07-400.webp 400w, assets/projekt-07-800.webp 800w" sizes="(max-width:600px) 50vw, (max-width:920px) 33vw, 25vw"><img src="assets/projekt-07-800.jpg" srcset="assets/projekt-07-400.jpg 400w, assets/projekt-07-800.jpg 800w" sizes="(max-width:600px) 50vw, (max-width:920px) 33vw, 25vw" width="800" height="600" alt="Karsten Scheffler bei Erdarbeiten mit Minibagger und Radlader" loading="lazy" decoding="async"></picture><figcaption>Erdarbeiten mit eigener Maschine</figcaption></figure>
+          <figure><picture><source type="image/webp" srcset="assets/karsten-schnitt-500.webp 500w, assets/karsten-schnitt-800.webp 800w" sizes="(max-width:600px) 50vw, (max-width:920px) 33vw, 25vw"><img src="assets/karsten-schnitt-800.jpg" srcset="assets/karsten-schnitt-500.jpg 500w, assets/karsten-schnitt-800.jpg 800w" sizes="(max-width:600px) 50vw, (max-width:920px) 33vw, 25vw" width="800" height="600" alt="Karsten Scheffler beim fachgerechten Formschnitt einer Hecke" loading="lazy" decoding="async"></picture><figcaption>Formschnitt mit Augenmaß</figcaption></figure>
+        </div>
+        <p style="text-align:center;margin-top:var(--space-5);color:var(--ink-soft);font-size:var(--step-0);">Lust auf so einen Garten? <a href="#kontakt" style="color:var(--clay);font-weight:600;border-bottom:1px solid rgba(156,82,48,.4);">Lassen Sie uns reden →</a></p>
+      </div>
+    </section>
+
+    <!-- ABLAUF -->
+    <section class="sand reveal" id="ablauf">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="eyebrow">So arbeiten wir zusammen</span>
+          <h2>In drei Schritten zu Ihrem Garten.</h2>
+        </div>
+        <div class="steps stagger">
+          <div class="step"><div class="num">1</div><h3>Gespräch vor Ort</h3><p>Sie melden sich, wir schauen uns Ihren Garten gemeinsam an. Ich höre zu — was wünschen Sie sich, was passt zum Grundstück? Unverbindlich und kostenlos.</p></div>
+          <div class="step"><div class="num">2</div><h3>Vorschlag &amp; fairer Rahmen</h3><p>Sie bekommen einen konkreten Vorschlag und einen klaren Kostenrahmen — transparent, ohne versteckte Posten. Sie entscheiden in Ruhe.</p></div>
+          <div class="step"><div class="num">3</div><h3>Umsetzung &amp; Pflege</h3><p>Ich setze um — sauber und termintreu. Auf Wunsch bleibe ich danach für die regelmäßige Pflege an Ihrer Seite. Ein Ansprechpartner für alles.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGION -->
+    <section class="light reveal" id="region">
+      <div class="wrap">
+        <div class="region-card">
+          <span class="eyebrow">Einzugsgebiet</span>
+          <h2>Zuhause in Landsberg am Lech.</h2>
+          <p>Ich arbeite für Privatgärten in Landsberg am Lech und im gesamten Landkreis. <!-- HIER: genaues Einzugsgebiet bestätigen, s. OFFENE-FRAGEN B9 -->Wenn Ihr Ort hier nicht dabei ist: fragen Sie einfach, meist passt es trotzdem.</p>
+          <div class="places">
+            <span class="place">Landsberg am Lech</span>
+            <span class="place">Kaufering</span>
+            <span class="place">Penzing</span>
+            <span class="place">Geltendorf</span>
+            <span class="place">Dießen am Ammersee</span>
+            <span class="place">Schondorf</span>
+            <span class="place">Utting</span>
+            <span class="place">Egling a. d. Paar</span>
+            <span class="place">… &amp; Umgebung</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="light reveal" id="kontakt">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="eyebrow">Kontakt</span>
+          <h2>Jeder Garten beginnt mit einem Gespräch.</h2>
+          <p>Haben Sie Fragen, Wünsche oder Anregungen? Nehmen Sie einfach Kontakt mit mir auf — ich melde mich zeitnah persönlich bei Ihnen.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="info-row">
+              <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              <!-- HIER: Telefonnummern + Labels prüfen (auf Altseite vertauscht), s. OFFENE-FRAGEN A2 -->
+              <span><span class="lbl">Telefon</span><br><a href="tel:+4981914016820">08191 4016820</a> · <a href="tel:+4917645624587">0176 45624587</a></span>
+            </div>
+            <div class="info-row">
+              <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+              <span><span class="lbl">E-Mail</span><br><a href="mailto:info@gartenbau-landsberg.de">info@gartenbau-landsberg.de</a></span>
+            </div>
+            <div class="info-row">
+              <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span><span class="lbl">Region</span><br><span class="val">Landsberg am Lech &amp; Umgebung</span></span>
+            </div>
+            <p class="promise">🌿 Ich melde mich innerhalb von 24 Stunden persönlich bei Ihnen zurück — kein Callcenter, kein Subunternehmer.</p>
+          </div>
+
+          <div class="card">
+            <p class="demo-flag"><span aria-hidden="true">ℹ️</span><span><b>Vorschau-Hinweis:</b> Dies ist eine Design-Vorschau. Im echten Betrieb landet Ihre Nachricht direkt im Postfach von Karsten Scheffler — hier wird zum Ausprobieren noch nichts versendet.</span></p>
+            <form class="form" id="kontakt-form" novalidate>
+              <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <div class="two">
+                <div class="field"><label for="name">Ihr Name *</label><input id="name" type="text" name="name" required autocomplete="name" placeholder="Vor- und Nachname"></div>
+                <div class="field"><label for="tel">Telefon</label><input id="tel" type="tel" name="tel" autocomplete="tel" placeholder="für den Rückruf"></div>
+              </div>
+              <div class="field"><label for="email">Ihre E-Mail *</label><input id="email" type="email" name="email" required autocomplete="email" placeholder="name@beispiel.de"></div>
+              <div class="field"><label for="thema">Worum geht's?</label>
+                <select id="thema" name="thema">
+                  <option>Garten neu gestalten / anlegen</option>
+                  <option>Regelmäßige Gartenpflege</option>
+                  <option>Hecken-, Form- oder Gehölzschnitt</option>
+                  <option>Obstbaumschnitt</option>
+                  <option>Outdoor-Bonsai</option>
+                  <option>Etwas anderes</option>
+                </select>
+              </div>
+              <div class="field"><label for="nachricht">Ihre Nachricht *</label><textarea id="nachricht" name="nachricht" required placeholder="Erzählen Sie kurz von Ihrem Garten und was Sie sich wünschen."></textarea></div>
+              <button class="btn" type="submit" id="submit-btn">Nachricht senden <span class="arr">→</span></button>
+              <div class="form-msg" id="form-msg" role="status" aria-live="polite"></div>
+              <p class="form-note"><span aria-hidden="true">🌿</span><span>Ihre Angaben werden ausschließlich zur Beantwortung Ihrer Anfrage genutzt.</span></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <span class="wm"><svg class="leaf leaf-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M33 54 C 33 36, 40 25, 54 18 C 54 36, 47 49, 33 54 Z" fill="currentColor"/><path d="M33 54 C 33 40, 25 31, 12 27 C 12 40, 19 50, 33 54 Z" fill="#8CC95F"/></svg><span>Gartengestaltung Scheffler</span></span>
+          <p class="tag">Natur mit Struktur.</p>
+          <!-- HIER: ladungsfähige Anschrift bestätigen (s. OFFENE-FRAGEN A1) -->
+          <p class="addr">Karsten Scheffler · Landsberg am Lech<br>info@gartenbau-landsberg.de · 08191 4016820</p>
+        </div>
+        <div class="foot-col">
+          <h3>Garten</h3>
+          <a href="#leistungen">Leistungen</a>
+          <a href="#ueber">Über mich</a>
+          <a href="#projekte">Projekte</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+        <div class="foot-col">
+          <h3>Rechtliches</h3>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 Gartengestaltung Scheffler · Landsberg am Lech</span>
+        <span class="hand">Handgebaut in Landsberg am Lech 🌿</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobil-Kontaktleiste -->
+  <nav class="mobile-bar" aria-label="Schnellkontakt">
+    <a href="tel:+4981914016820"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Anrufen</a>
+    <a class="accent" href="#kontakt"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C7 7 7 13 12 22 17 13 17 7 12 2z"/></svg>Garten-Gespräch</a>
+    <a href="mailto:info@gartenbau-landsberg.de"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>E-Mail</a>
+  </nav>
+
+  <script>
+  (function(){
+    var toggle=document.querySelector('.nav-toggle'),links=document.getElementById('nav-links');
+    if(!toggle||!links)return;
+    toggle.addEventListener('click',function(){var o=links.classList.toggle('open');toggle.setAttribute('aria-expanded',o?'true':'false');toggle.setAttribute('aria-label',o?'Menü schließen':'Menü öffnen');});
+    links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){links.classList.remove('open');toggle.setAttribute('aria-expanded','false');});});
+  })();
+  (function(){
+    var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches,els=document.querySelectorAll('.reveal');
+    function reveal(el){if(el)el.classList.add('in');}
+    if(reduce||!('IntersectionObserver' in window)){els.forEach(reveal);return;}
+    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){reveal(e.target);io.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -10% 0px'});
+    els.forEach(function(el){io.observe(el);});
+    els.forEach(function(el){var r=el.getBoundingClientRect();if(r.top<(window.innerHeight||0)&&r.bottom>0){reveal(el);io.unobserve(el);}});
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(){reveal(document.querySelector(a.getAttribute('href')));});});
+  })();
+  /* DEMO-Formular: versendet bewusst NICHT — zeigt einen ehrlichen Vorschau-Hinweis. */
+  (function(){
+    var form=document.getElementById('kontakt-form'),msg=document.getElementById('form-msg'),btn=document.getElementById('submit-btn');
+    if(!form)return;
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      if(form.querySelector('[name="botcheck"]').checked)return;
+      if(!form.name.value.trim()||!form.email.value.trim()||!form.nachricht.value.trim()){
+        msg.className='form-msg ok';msg.style.background='rgba(156,82,48,.10)';msg.style.borderColor='rgba(156,82,48,.3)';msg.style.color='#834525';
+        msg.textContent='Bitte füllen Sie Name, E-Mail und Ihre Nachricht aus.';return;
+      }
+      msg.className='form-msg ok';msg.style.cssText='';
+      msg.textContent='Das ist eine Design-Vorschau — Ihre Nachricht wird hier noch nicht versendet. Im echten Betrieb landet sie direkt bei Karsten Scheffler, der sich innerhalb von 24 Stunden persönlich meldet. 🌿';
+      btn.disabled=true;btn.style.opacity='.7';
+    });
+  })();
+  </script>
+</body>
+</html>

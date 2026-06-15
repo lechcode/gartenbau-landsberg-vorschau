@@ -1,0 +1,64 @@
+/* ============================================================
+   Gartengestaltung Scheffler — lokale Schriften (keine externen Requests)
+   Serif (Headlines):  Fraunces  400 / 600   — latin-Subset, woff2
+   Sans  (Fließtext):  Inter     400 / 600   — latin-Subset, woff2
+   Alle Dateien liegen lokal in assets/fonts/.
+   font-display: swap  + size-adjust-Fallbacks gegen Layout-Shift (CLS).
+   ============================================================ */
+
+/* ---------- Fraunces (Serif) ---------- */
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/fraunces-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/fraunces-600.woff2") format("woff2");
+}
+
+/* ---------- Inter (Sans) ---------- */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/inter-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/inter-600.woff2") format("woff2");
+}
+
+/* ---------- Fallback-Metriken (gegen Font-Swap-Sprung) ----------
+   Gemessen: avg. Kleinbuchstaben-Vorschub der Webfont vs. System-Fallback.
+   "Fraunces Fallback"  -> Georgia hochskaliert (Webfont breiter)
+   "Inter Fallback"     -> Arial  hochskaliert (Webfont breiter)
+   Im Stylesheet als letzte Stufe nutzen, z. B.:
+     font-family: "Fraunces", "Fraunces Fallback", Georgia, serif;
+     font-family: "Inter",    "Inter Fallback",    Arial, sans-serif;
+*/
+@font-face {
+  font-family: "Fraunces Fallback";
+  src: local("Georgia");
+  size-adjust: 108.4%;
+  ascent-override: 97.8%;
+  descent-override: 25.5%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial");
+  size-adjust: 107.1%;
+  ascent-override: 96.9%;
+  descent-override: 24.1%;
+  line-gap-override: 0%;
+}
