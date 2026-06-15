@@ -300,7 +300,7 @@
     .nav-links a:not(.btn){padding:14px 0;border-bottom:1px solid var(--line-l);} .nav-links a:not(.btn)::after{display:none;}
     .nav-links .btn{margin-top:14px;justify-content:center;} .nav-toggle{display:block;}
     .about-grid,.contact-grid{grid-template-columns:1fr;}
-    .about-portrait{max-width:420px;}
+    .about-portrait{max-width:330px;margin-inline:auto;}
     .trust-grid{grid-template-columns:1fr 1fr;}
     .svc-grid,.steps{grid-template-columns:1fr 1fr;}
     .gallery{grid-template-columns:repeat(3,1fr);}
@@ -309,6 +309,7 @@
     .svc-grid,.steps,.trust-grid{grid-template-columns:1fr;}
     .gallery{grid-template-columns:1fr 1fr;gap:9px;} .gallery .wide{grid-column:span 2;}
     .two{grid-template-columns:1fr;}
+    .about-portrait{max-width:230px;}
     .hero-cta{flex-direction:column;align-items:stretch;} .hero-cta .btn{justify-content:center;} .hero-tel{justify-content:center;margin-top:4px;}
     .foot-top{grid-template-columns:1fr;} .foot-bottom{flex-direction:column;align-items:flex-start;}
     .mobile-bar{display:grid;}
@@ -397,8 +398,8 @@
         <div class="about-grid">
           <div class="about-portrait">
             <picture>
-              <source type="image/webp" srcset="assets/karsten-portrait-480.webp 480w, assets/karsten-portrait-700.webp 700w" sizes="(max-width:920px) 420px, 40vw">
-              <img src="assets/karsten-portrait-700.jpg" srcset="assets/karsten-portrait-480.jpg 480w, assets/karsten-portrait-700.jpg 700w" sizes="(max-width:920px) 420px, 40vw" width="577" height="701" alt="Karsten Scheffler, Gärtner aus Landsberg am Lech, lächelnd an einem Bachlauf" loading="lazy" decoding="async">
+              <source type="image/webp" srcset="assets/karsten-portrait-480.webp 480w, assets/karsten-portrait-700.webp 700w" sizes="(max-width:600px) 230px, (max-width:920px) 330px, 40vw">
+              <img src="assets/karsten-portrait-700.jpg" srcset="assets/karsten-portrait-480.jpg 480w, assets/karsten-portrait-700.jpg 700w" sizes="(max-width:600px) 230px, (max-width:920px) 330px, 40vw" width="577" height="701" alt="Karsten Scheffler, Gärtner aus Landsberg am Lech, lächelnd an einem Bachlauf" loading="lazy" decoding="async">
               <svg class="leaf-deco" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M33 54 C 33 36, 40 25, 54 18 C 54 36, 47 49, 33 54 Z" fill="currentColor"/><path d="M33 54 C 33 40, 25 31, 12 27 C 12 40, 19 50, 33 54 Z" fill="#8CC95F"/></svg>
             </picture>
           </div>
